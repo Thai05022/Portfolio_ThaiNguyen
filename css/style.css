@@ -535,8 +535,36 @@ body.dark-theme {
 
 .product__img:hover {
     opacity: 0.2;
+    transform: translateY(3px);
+    cursor: pointer;
 }
 
+/* Work exp */
+.workexp__group {
+    display: grid;
+    row-gap: 1.5rem;
+}
+
+.workexp__container {
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+.workexp__item-title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+}
+
+.workexp__item>h2 {
+    color: var(--first-color-alt);
+}
+
+.workexp__description {
+    margin-top: 1rem;
+    font-size: var(--normal-font-size);
+    font-weight: var(--smaller-font-size);
+    padding: 0 1.25rem 1.25rem 2.5rem;
+}
 
 /* FAQ/s */
 .questions {
@@ -860,10 +888,6 @@ body.dark-theme {
         padding: 1.5rem;
     }
 
-    .product__img {
-        /* width: 180px; */
-    }
-
     .product__container {
         grid-template-columns: 0.6fr;
         justify-content: center;
@@ -873,12 +897,6 @@ body.dark-theme {
         padding: 0.5rem 1.5rem;
     }
 }
-
-/* @media screen and (max-width: 561px) {
-    .home__socials {
-        top: 4rem;
-    }
-} */
 
 
 /* MEDIUM */
@@ -895,10 +913,6 @@ body.dark-theme {
 
     .home__img {
         width: 440px;
-    }
-
-    .product__img {
-        /* width: 200px; */
     }
 }
 
